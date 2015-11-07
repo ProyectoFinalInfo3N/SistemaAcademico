@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/10/2015 07:48:10 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+ <class name="com.uelbosque.cjlfactory.model.Estudiante" table="estudiante">
+  <id name="id" type="int">
+   <column name="idestudiante"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" name="nombres" type="string">
+   <column name="nombre"/>
+  </property>
+  <property generated="never" lazy="false" name="apellidos" type="string">
+   <column name="apellidos"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaNacimiento" type="date">
+   <column name="fechanacimiento"/>
+  </property>
+  <property generated="never" lazy="false" name="lugarNacimiento" type="string">
+   <column name="lugarnacimiento"/>
+  </property>
+  <property generated="never" lazy="false" name="telefono" type="string">
+   <column name="telefono"/>
+  </property>
+  <property generated="never" lazy="false" name="direccion" type="string">
+   <column name="direccion"/>
+  </property>
+  <property generated="never" lazy="false" name="correoElectonico" type="string">
+   <column name="correoelectronico"/>
+  </property>
+ </class>
+</hibernate-mapping>
