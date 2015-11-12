@@ -1,10 +1,10 @@
-package com.uelbosque.cjlfactory.utils;
+package com.uelbosque.cjlfactory.utilidades;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class EntityManagerUtils {
+public class UtilidadesEntityManager {
 	
 	private static final EntityManagerFactory EMF;
 	static{

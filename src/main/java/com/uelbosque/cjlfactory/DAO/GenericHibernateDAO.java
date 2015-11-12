@@ -9,7 +9,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.uelbosque.cjlfactory.utils.HibernateUtils;
+import com.uelbosque.cjlfactory.utilidades.UtilidadesHibernate;
 
 public class GenericHibernateDAO<T, ID extends Serializable> implements IGenericDAO<T, ID> {
 
@@ -23,7 +23,7 @@ public class GenericHibernateDAO<T, ID extends Serializable> implements IGeneric
 
 	private void startOperation() throws HibernateException {
 
-		session = HibernateUtils.getSessionFactory().getCurrentSession();
+		session = UtilidadesHibernate.getSessionFactory().getCurrentSession();
 		tx = session.beginTransaction();
 	}
 	private void closeSession()	{

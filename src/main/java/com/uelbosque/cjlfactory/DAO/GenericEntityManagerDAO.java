@@ -4,7 +4,8 @@ import java.io.Serializable;
 import java.util.Dictionary;
 import java.util.List;
 import javax.persistence.EntityManager;
-import com.uelbosque.cjlfactory.utils.EntityManagerUtils;
+
+import com.uelbosque.cjlfactory.utilidades.UtilidadesEntityManager;
 
 public class GenericEntityManagerDAO<T, ID extends Serializable> implements IGenericDAO<T, ID> {
 
@@ -16,7 +17,7 @@ public class GenericEntityManagerDAO<T, ID extends Serializable> implements IGen
 	private Class<T> clazz = null;
 
 	private void startOperation() {
-		em = EntityManagerUtils.getEntityManager();
+		em = UtilidadesEntityManager.getEntityManager();
 	}
 
 	@Override

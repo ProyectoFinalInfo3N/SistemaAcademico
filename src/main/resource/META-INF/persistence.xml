@@ -5,12 +5,19 @@
 	<persistence-unit name="SistemaAcademico"
 		transaction-type="RESOURCE_LOCAL">
 		<properties>
-			<property name="javax.persistence.jdbc.url"
+			<!--  <property name="javax.persistence.jdbc.url"
 				value="jdbc:mysql://goncris12.no-ip.biz:3306/sistema_academico" />
 			<property name="javax.persistence.jdbc.user" value="sisaca" />
 			<property name="javax.persistence.jdbc.password" value="sisaca2015*" />
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />-->
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+        	<property name="hibernate.connection.username" value="sisaca"/>			
+        	<property name="hibernate.connection.password" value="sisaca2015*"/>
+        	<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/sistema_academico"/>
+        	<property name="hibernate.default_schema" value="sistema_academico"/>
+        	<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+        	<property name="current_session_context_class" value="thread"/>
+        	<property name="showSql" value="true"/>
 		</properties>
 	</persistence-unit>
 </persistence>

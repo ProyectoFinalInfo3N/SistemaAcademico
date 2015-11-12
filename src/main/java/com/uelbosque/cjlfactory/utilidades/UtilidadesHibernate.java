@@ -1,11 +1,11 @@
-package com.uelbosque.cjlfactory.utils;
+package com.uelbosque.cjlfactory.utilidades;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
 
-public class HibernateUtils {
+public class UtilidadesHibernate {
 
     private static final SessionFactory sessionFactory = buildSessionFactory();
 
